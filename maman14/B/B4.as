@@ -1,0 +1,16 @@
+;labelDuplicateError:
+First: .string "hey"
+.extern Second
+Third: stop
+.extern correctFourth
+
+First: add ff[r12], ff[r11]
+Second: .string "HEY"
+Third: .data +2,-2
+.extern correctFourth
+
+;illegalLabelError:
+LONGG1234567891011121314151617181920212223242526272829: stop
+$$x: .string "HEY"
+r3: rts
+mov: mov r1,r2

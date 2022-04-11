@@ -1,0 +1,5 @@
+read_comp A, 3.45      , 0   	 
+	 print_comp 		A	
+   add_comp A	,	A   
+  		 stop			
+

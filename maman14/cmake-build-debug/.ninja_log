@@ -1,0 +1,15 @@
+# ninja log v5
+0	44	6701996377954459	build.ninja	3c7e3dbca10dce8f
+288	518	6694300607981198	assemblerProject.exe	22dc7d84de61ae68
+57	95	1648489435719143963	assemblerProject	e0a2fd9773a2d4e
+1	399	6701996511005317	CMakeFiles/assemblerProject.dir/preAssemblerRun.c.obj	f49a2d0b0a161af7
+17	401	6701996510965273	CMakeFiles/assemblerProject.dir/main.c.obj	1f898cf2d7ad78a6
+28	405	6701996511685848	CMakeFiles/assemblerProject.dir/utils.c.obj	e254013a9bb7913d
+40	410	6701996511525854	CMakeFiles/assemblerProject.dir/beautifyLines.c.obj	2bd24de8cffc961d
+84	415	6701996511835813	CMakeFiles/assemblerProject.dir/fileFunctions.c.obj	d29df0ad7ec53b3b
+119	420	6701996512305797	CMakeFiles/assemblerProject.dir/firstPass.c.obj	f4101076e1683768
+157	455	6701996512835798	CMakeFiles/assemblerProject.dir/secondPass.c.obj	b0832d39f85ff1e1
+198	483	6701996513121000	CMakeFiles/assemblerProject.dir/directives.c.obj	d34e501ddb54661c
+262	514	6701996513426331	CMakeFiles/assemblerProject.dir/lineToSentence.c.obj	905a65108bc3b802
+342	553	6701996513821540	CMakeFiles/assemblerProject.dir/commands.c.obj	e7e7b9b88ece8942
+553	748	6701996515781879	assemblerProject.exe	791c381cc645d51f

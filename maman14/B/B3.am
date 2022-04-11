@@ -1,0 +1,16 @@
+;incorrectAmountOfOperandsError:
+prn #-1, #-5, #-7
+clr LOOP[3], HEY[5], DUDE[5]
+stop h
+inc
+;firstOperatorIncorrectTypeError:
+lea #+5 ,r6
+red #-3
+jsr r3
+;secondOperatorIncorrectTypeError:
+mov #-6 ,#+7
+;unrecognizableAddressingType:
+lea STR, lol[r19]
+lea %ol[r11], STR
+;indexAddressingIllegalRegisterError:
+add DA, BLA[r9]

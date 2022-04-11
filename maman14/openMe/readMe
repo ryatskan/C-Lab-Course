@@ -1,0 +1,46 @@
+Name: Roy Yatskan
+ID: 323057307
+Date: March 2022
+=============================
+This is the 14 Maman. 
+I've written it using Clion, then made adjustment for makefile compilcation with the -pedantic flag.
+read the "maman 14" rules first, I explain here the implemenation so it wont be 42 pages long..
+
+The Project consists of 3 main stages:
+1. the pre-assembler-run: 
+	a. input: a given file.
+	b. output: a new file.
+	
+	c. transform the file into an array of lines ("lines"). 
+	   then, the lines arr will be cleaned from tabs, reduntant spaces and empty lines.
+	   then, for each macro decleration, the run will replace each macro call with the macro code. (and remove the declaration).
+	   print the lines into a new file with suffix ".am".
+
+2. the first pass:
+	a. input: lines
+	b. output: a Sentence array ("sentences"), machineWordImg, symbolTable.
+
+	c. iterate over each line in lines.
+	   read each line synatx (label, operands, operators) and transform it into a processed Sentence struct, for easier semantics
+	   processing.
+	   then, process each Sentence, depending on its specific label, operand, operators.. into machineWords 
+	   (capsulated as a single machineWordCapsule) and entries in symbolTable (if needed).
+	   Most of the machineWords are complete, some are flaged to be filled in the second pass.
+	   
+3. the second pass:
+	a. input: sentences, machineWordImg, symbolTable from fpass.
+	b. output: 3 files
+	c. iterate over each Sentence in sentences, and if the sentence has correspoding machineWords that are flaged, fill them.
+	   also flag each Sentence with ".entry" operand inside the symbolTable, and create a table keeping track of 
+	   machineWords correspoding to ".external" Sentence (externalTable).
+	   print the complete machineWordImg, entries in symbolTable and externalTable to 3 new files.
+
+NOTE: the above mentioned assumes input is correct, fpass and spass also looks for errors in the input
+      and only output the error if found.
+=============================
+NOTE: working directory is "files"
+=============================
+Tests Handling:
+A folder contains a test about pre-assembler
+B folder contains tests about error handling
+C folder contains a test of an error-free run.
