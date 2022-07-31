@@ -1,3 +1,0 @@
-C:/Users/Roy Yatskan/Desktop/assemblerProject/cmake-build-debug/CMakeFiles/assemblerProject.dir
-C:/Users/Roy Yatskan/Desktop/assemblerProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Roy Yatskan/Desktop/assemblerProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
